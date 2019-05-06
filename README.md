@@ -1,3 +1,9 @@
+このリポジトリは [isucon/isucon8-final](https://github.com/isucon/isucon8-final) を元に、技術評論社 [WEB+DB PRESS vol.111](https://gihyo.jp/magazine/wdpress/archive/2019/vol111) Perl Hackers Hub のために改変したものです。
+
+改変箇所は Pull Request https://github.com/fujiwara/isucon8-final-wdpress111/pull/1 を参照してください。
+
+----
+
 # ISUCON8 本戦問題
 
 - [MANUAL](docs/MANUAL.md) はこちら
