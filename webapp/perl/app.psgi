@@ -4,6 +4,7 @@ use lib "$FindBin::Bin/lib";
 use File::Basename;
 use Plack::Builder;
 use Isucoin::Web;
+use Devel::KYTProf;
 use Devel::KYTProf::Logger::XRay;
 use AWS::XRay;
 Devel::KYTProf->logger("Devel::KYTProf::Logger::XRay");

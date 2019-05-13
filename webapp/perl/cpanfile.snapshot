@@ -900,10 +900,10 @@ DISTRIBUTIONS
       File::Spec 0
       File::Temp 0.16
       perl 5.00405
-  Devel-KYTProf-0.9991
-    pathname: S/SO/SONGMU/Devel-KYTProf-0.9991.tar.gz
+  Devel-KYTProf-0.9992
+    pathname: S/SO/SONGMU/Devel-KYTProf-0.9992.tar.gz
     provides:
-      Devel::KYTProf 0.9991
+      Devel::KYTProf 0.9992
       Devel::KYTProf::Logger::LTSV undef
       Devel::KYTProf::Profiler::Cache::Memcached::Fast undef
       Devel::KYTProf::Profiler::DBI undef
@@ -918,10 +918,10 @@ DISTRIBUTIONS
       Module::Load 0
       Term::ANSIColor 0
       perl 5.008_001
-  Devel-KYTProf-Logger-XRay-0.03
-    pathname: F/FU/FUJIWARA/Devel-KYTProf-Logger-XRay-0.03.tar.gz
+  Devel-KYTProf-Logger-XRay-0.04
+    pathname: F/FU/FUJIWARA/Devel-KYTProf-Logger-XRay-0.04.tar.gz
     provides:
-      Devel::KYTProf::Logger::XRay 0.03
+      Devel::KYTProf::Logger::XRay 0.04
     requirements:
       AWS::XRay 0.02
       Devel::KYTProf 0
