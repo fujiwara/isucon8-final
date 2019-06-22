@@ -16,7 +16,10 @@ requires 'Digest::Bcrypt';
 requires 'Data::Entropy::Algorithms';
 requires 'IO::Socket::SSL';
 requires 'Log::Minimal';
-requires 'Devel::KYTProf';
+requires 'Devel::KYTProf', '0.9992';
+requires 'AWS::XRay', '0.08';
+requires 'Plack::Middleware::XRay', '0.06';
+requires 'Devel::KYTProf::Logger::XRay', '0.04';
 
 on configure => sub {
     requires 'ExtUtils::MakeMaker';

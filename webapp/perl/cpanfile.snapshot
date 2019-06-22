@@ -1,5 +1,20 @@
 # carton snapshot format: version 1.0
 DISTRIBUTIONS
+  AWS-XRay-0.08
+    pathname: F/FU/FUJIWARA/AWS-XRay-0.08.tar.gz
+    provides:
+      AWS::XRay 0.08
+      AWS::XRay::Buffer undef
+      AWS::XRay::Segment undef
+      AWS::XRay::Segment::NoTrace undef
+    requirements:
+      Crypt::URandom 0
+      IO::Socket::INET 0
+      JSON::XS 0
+      Module::Build::Tiny 0.035
+      Time::HiRes 0
+      Types::Serialiser 0
+      perl 5.012000
   Apache-LogFormat-Compiler-0.35
     pathname: K/KA/KAZEBURO/Apache-LogFormat-Compiler-0.35.tar.gz
     provides:
@@ -46,6 +61,13 @@ DISTRIBUTIONS
       Class::Data::Inheritable 0.08
     requirements:
       ExtUtils::MakeMaker 0
+  Class-Data-Lite-0.0010
+    pathname: S/SO/SONGMU/Class-Data-Lite-0.0010.tar.gz
+    provides:
+      Class::Data::Lite 0.0010
+    requirements:
+      Module::Build::Tiny 0.035
+      perl 5.008001
   Class-Inspector-1.32
     pathname: P/PL/PLICEASE/Class-Inspector-1.32.tar.gz
     provides:
@@ -94,6 +116,14 @@ DISTRIBUTIONS
       Exporter 0
       ExtUtils::MakeMaker 6.64
       perl 5.008001
+  Cpanel-JSON-XS-4.11
+    pathname: R/RU/RURBAN/Cpanel-JSON-XS-4.11.tar.gz
+    provides:
+      Cpanel::JSON::XS 4.11
+      Cpanel::JSON::XS::Type undef
+    requirements:
+      ExtUtils::MakeMaker 0
+      Pod::Text 2.08
   Crypt-Eksblowfish-0.009
     pathname: Z/ZE/ZEFRAM/Crypt-Eksblowfish-0.009.tar.gz
     provides:
@@ -122,6 +152,36 @@ DISTRIBUTIONS
       Crypt::Rijndael 1.13
     requirements:
       ExtUtils::MakeMaker 0
+      perl 5.006
+  Crypt-URandom-0.36
+    pathname: D/DD/DDICK/Crypt-URandom-0.36.tar.gz
+    provides:
+      Crypt::URandom 0.36
+    requirements:
+      Carp 0
+      English 0
+      ExtUtils::MakeMaker 0
+      FileHandle 0
+      Test::More 0
+  DBD-SQLite-1.62
+    pathname: I/IS/ISHIGAKI/DBD-SQLite-1.62.tar.gz
+    provides:
+      DBD::SQLite 1.62
+      DBD::SQLite::Constants undef
+      DBD::SQLite::GetInfo undef
+      DBD::SQLite::VirtualTable 1.62
+      DBD::SQLite::VirtualTable::Cursor 1.62
+      DBD::SQLite::VirtualTable::FileContent undef
+      DBD::SQLite::VirtualTable::FileContent::Cursor undef
+      DBD::SQLite::VirtualTable::PerlData undef
+      DBD::SQLite::VirtualTable::PerlData::Cursor undef
+    requirements:
+      DBI 1.57
+      ExtUtils::MakeMaker 0
+      File::Spec 0.82
+      Test::Builder 0.86
+      Test::More 0.47
+      Tie::Hash 0
       perl 5.006
   DBD-mysql-4.048
     pathname: M/MI/MICHIELB/DBD-mysql-4.048.tar.gz
@@ -260,6 +320,16 @@ DISTRIBUTIONS
       Scalar::Util 0
       parent 0
       perl 5.008005
+  DBIx-Tracer-0.03
+    pathname: T/TO/TOKUHIROM/DBIx-Tracer-0.03.tar.gz
+    provides:
+      DBIx::Tracer 0.03
+    requirements:
+      DBD::SQLite 1.48
+      DBI 0
+      Module::Build::Tiny 0.035
+      parent 0
+      perl 5.008008
   DBIx-TransactionManager-1.13
     pathname: N/NE/NEKOKAK/DBIx-TransactionManager-1.13.tar.gz
     provides:
@@ -830,18 +900,33 @@ DISTRIBUTIONS
       File::Spec 0
       File::Temp 0.16
       perl 5.00405
-  Devel-KYTProf-0.05
-    pathname: O/ON/ONISHI/Devel-KYTProf-0.05.tar.gz
+  Devel-KYTProf-0.9992
+    pathname: S/SO/SONGMU/Devel-KYTProf-0.9992.tar.gz
     provides:
-      Devel::KYTProf 0.05
+      Devel::KYTProf 0.9992
       Devel::KYTProf::Logger::LTSV undef
+      Devel::KYTProf::Profiler::Cache::Memcached::Fast undef
+      Devel::KYTProf::Profiler::DBI undef
+      Devel::KYTProf::Profiler::Furl::HTTP undef
+      Devel::KYTProf::Profiler::LWP::UserAgent undef
+      Devel::KYTProf::Profiler::MogileFS::Client undef
     requirements:
-      Class::Data::Inheritable 0
-      ExtUtils::MakeMaker 6.36
+      Class::Data::Lite 0
+      Class::Inspector 0
+      DBIx::Tracer 0
+      Module::Build::Tiny 0.035
+      Module::Load 0
       Term::ANSIColor 0
-      Test::More 0.94
-      Time::HiRes 0
-      UNIVERSAL::require 0
+      perl 5.008_001
+  Devel-KYTProf-Logger-XRay-0.04
+    pathname: F/FU/FUJIWARA/Devel-KYTProf-Logger-XRay-0.04.tar.gz
+    provides:
+      Devel::KYTProf::Logger::XRay 0.04
+    requirements:
+      AWS::XRay 0.02
+      Devel::KYTProf 0
+      Module::Build::Tiny 0.035
+      perl 5.012000
   Devel-PPPort-3.43
     pathname: X/XS/XSAWYERX/Devel-PPPort-3.43.tar.gz
     provides:
@@ -1329,6 +1414,7 @@ DISTRIBUTIONS
       JSON::MaybeXS 1.004000
     requirements:
       Carp 0
+      Cpanel::JSON::XS 2.3310
       ExtUtils::MakeMaker 0
       JSON::PP 2.27300
       Scalar::Util 0
@@ -1863,6 +1949,15 @@ DISTRIBUTIONS
       Digest::SHA1 0
       Module::Build::Tiny 0.039
       Plack 0.9910
+  Plack-Middleware-XRay-0.06
+    pathname: F/FU/FUJIWARA/Plack-Middleware-XRay-0.06.tar.gz
+    provides:
+      Plack::Middleware::XRay 0.06
+    requirements:
+      AWS::XRay 0.06
+      Module::Build::Tiny 0.035
+      Plack::Middleware 0
+      perl 5.012000
   Proc-Wait3-0.05
     pathname: C/CT/CTILMES/Proc-Wait3-0.05.tar.gz
     provides:
